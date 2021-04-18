@@ -10,7 +10,7 @@ const articlesController = require("./articles/ArticlesController");
 const Article = require("./articles/Article");
 const Category = require("./categories/category")
 
- //View engine 
+//View engine 
 app.set('view engine', 'ejs')
 
 
@@ -38,6 +38,6 @@ app.get("/", (req, res) => {
     res.render("index")
 })
 
-app.listen(8080, () => {
+app.listen(3000, () => {
     console.log("Server is runner")
 })
