@@ -41,7 +41,11 @@ router.post("/categories/delete", (req, res) => {
             }).then(() => {
                 res.redirect("/admin/categories")
             })
+        } else { // IF NOT A NUMBER
+            res.redirect("/admin/categories")
         }
+    } else { //NULL
+        res.redirect("/admin/categories")
     }
 })
 
